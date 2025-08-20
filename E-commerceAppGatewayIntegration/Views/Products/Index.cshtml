@@ -1,0 +1,18 @@
+﻿@model List<E_commerceAppGatewayIntegration.Models.ProductEntity>
+
+<h2>Products</h2>
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4">
+            <div class="card" style="margin:10px;">
+                <img src="@product.Image" class="card-img-top" alt="@product.Title" style="height:200px; object-fit:contain;">
+                <div class="card-body">
+                    <h5 class="card-title">@product.Title</h5>
+                    <p class="card-text">@product.Description</p>
+                    <p><strong>Price:</strong> $@product.Price</p>
+                </div>
+            </div>
+        </div>
+    }
+</div>

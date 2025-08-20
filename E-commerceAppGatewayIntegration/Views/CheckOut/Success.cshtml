@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Order Success";
+}
+
+<div class="container py-5 text-center">
+    <div class="mb-4">
+    </div>
+
+    <h2 class="text-success fw-bold mb-3">
+        🎉 Order Placed Successfully!
+    </h2>
+
+    <p class="lead text-muted mb-4">
+        Thank you for shopping with us. Your order is confirmed and on its way!  
+        Please visit us again for more amazing products.
+    </p>
+
+    <div class="card shadow-sm mx-auto mb-4" style="max-width: 500px; border-radius: 15px;">
+        <div class="card-body">
+            <h5 class="card-title fw-bold">📦 Order Summary</h5>
+            <p class="card-text mb-2">Payment Status: <span class="badge bg-success">Paid</span></p>
+            <p class="card-text mb-0">Expected Delivery: <strong>@DateTime.Now.AddDays(3).ToString("MMM dd, yyyy")</strong></p>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    body {
+        background: linear-gradient(to bottom right, #e8f5e9, #f1f8e9);
+    }
+    .card {
+        border: none;
+    }
+</style>

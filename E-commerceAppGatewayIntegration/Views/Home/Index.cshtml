@@ -1,0 +1,51 @@
+﻿
+
+
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+
+    <div class="jumbotron text-center bg-light p-5 rounded shadow">
+        <h1 class="display-3 fw-bold text-primary">Welcome to Our Store 🛒</h1>
+        <p class="lead mt-3">Find the best products at unbeatable prices!</p>
+        <a asp-controller="Checkout" asp-action="Index" class="btn btn-lg btn-primary mt-3 px-5">
+            Start Shopping
+        </a>
+    </div>
+
+    <div class="mt-5">
+        <h2 class="text-center mb-4 text-secondary">Browse Categories</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0 rounded-3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Electronics</h5>
+                        <p class="card-text">Discover the latest gadgets and devices.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0 rounded-3">
+
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fashion</h5>
+                        <p class="card-text">Trendy styles for men and women.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0 rounded-3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Home & Living</h5>
+                        <p class="card-text">Make your home cozy and modern.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

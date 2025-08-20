@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Transaction Cancelled";
+}
+
+<div class="container py-5 text-center">
+
+    <div class="mb-4">
+
+    </div>
+
+    <h2 class="text-danger fw-bold mb-3">
+        ❌ Oops! Transaction Cancelled
+    </h2>
+
+    <p class="lead text-muted mb-4">
+        It seems your payment did not go through. No worries!
+        You can try again or choose another payment method.
+    </p>
+
+
+    <div class="card shadow-sm mx-auto mb-4" style="max-width: 500px; border-radius: 15px;">
+        <div class="card-body">
+            <h5 class="card-title fw-bold text-secondary">What You Can Do:</h5>
+            <ul class="list-unstyled text-start small">
+                <li>💳 Double-check your card details.</li>
+                <li>🔁 Try processing the payment again.</li>
+                <li>📧 Contact support if the issue continues.</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="d-flex justify-content-center gap-3">
+        <a asp-controller="CheckOut" asp-action="Index" class="btn btn-outline-primary btn-lg">
+            🔄 Try Again
+        </a>
+        <a asp-controller="Product" asp-action="Index" class="btn btn-danger btn-lg">
+            🛍 Continue Shopping
+        </a>
+    </div>
+</div>
+
+<style>
+    body {
+        background: linear-gradient(to bottom right, #ffebee, #fff3f3);
+    }
+
+    .card {
+        border: none;
+    }
+</style>
